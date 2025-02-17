@@ -23,7 +23,7 @@ export const Modal = (props: PropsWithChildren<Props>) => {
   }
 
   return createPortal(
-    <div className={styles.modal}>
+    <div className={styles.modal} data-testid="modal-background">
       <div className={styles.content} ref={contentRef}>
         {children}
         <button className={styles.close} type="button" onClick={handleClose}>
